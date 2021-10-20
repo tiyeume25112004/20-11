@@ -24,8 +24,8 @@ body{
     -webkit-text-stroke: 2px #03a9f4;
 }
 .content h2:nth-child(2){
-    color: #03a9f4;
-    animation: animate 2s ease-in-out infinite ;
+    color: red;
+    animation: animate 0.125s ease-in-out infinite ;
 }
 @keyframes animate{
     0% 100%
