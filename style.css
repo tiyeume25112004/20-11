@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+.content{
+    position: relative;
+}
+.content h2{
+    position: absolute;
+    transform:translate(-50%,-50%) ;
+    font-size: 8em;
+}
+.content h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px #03a9f4;
+}
+.content h2:nth-child(2){
+    color: #03a9f4;
+    animation: animate 2s ease-in-out infinite ;
+}
+@keyframes animate{
+    0% 100%
+    {
+        clip-path: polygon(47% 21%, 55% 42%, 76% 43%, 59% 55%, 64% 71%, 47% 61%, 34% 72%, 38% 54%, 24% 44%, 42% 42%);
+    }
+    50%
+    {
+        clip-path: polygon(58% 23%, 57% 47%, 79% 58%, 54% 60%, 55% 81%, 41% 61%, 20% 70%, 35% 50%, 23% 32%, 44% 41%);
+    }
+}
